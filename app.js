@@ -9,7 +9,7 @@ const movie = require('./routes/movie');//burası degisti
 
 const app = express();
 //db connection
-const db=require("./helper/db.js")()//böyle yaparak db.js i çalıstırdık
+const db=require("./helper/db.js")()
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
