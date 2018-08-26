@@ -8,4 +8,6 @@ module.exports=()=>{
    mongoose.connection.on("error",(err)=>{
     console.log("hata yakalandı:,",err)
    })
+
+   mongoose.Promise=global.Promise;
 }
