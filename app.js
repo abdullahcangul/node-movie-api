@@ -27,8 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/app/movies', movie);//burası degisti
-app.use("/app/directors",director)
+app.use('/api/movies', movie);//burası degisti
+app.use("/api/directors",director)
 app.use("/api",verifyToken)
 
 // catch 404 and forward to error handler
